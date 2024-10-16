@@ -1,4 +1,6 @@
-import Image from "next/image";
+// src/app/page.tsx
+import Image from 'next/image';
+import Counter from '../components/Counter';
 
 export default function Home() {
   return (
@@ -12,6 +14,23 @@ export default function Home() {
           height={38}
           priority
         />
+        {/* my component example */}
+        {/* start */}
+        <section className='font-[family-name:var(--font-geist-mono)]'>
+          <h1>Welcome to Sangalabror Pujianto's next.js kit / template!</h1>
+          <p className='mb-4'>
+            In this kit and template libraries include:
+          </p>
+          <ul className="list-inside list-disc text-sm text-center sm:text-left">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>Redux Toolkit</li>
+            <li>React Hot Toast</li>
+          </ul>
+          <Counter />
+        </section>
+        {/* end */}
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
@@ -42,8 +61,6 @@ export default function Home() {
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Read our docs
           </a>

@@ -1,7 +1,18 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+```bash
+npm install
+```
 
+## Libraries Packages
+This next.js kit / template comes with:
+- Tailwindcss
+- TailwindUI
+- HeroIcons
+- Redux
+
+## Running Local Development Envrionment
 First, run the development server:
 
 ```bash
